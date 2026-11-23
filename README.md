@@ -1,8 +1,26 @@
 # FossPulser
 
-FossPulser is a research visualization for river networks, coastal satellite observations, precipitation point samples, and wastewater facilities. It combines a native Rust/Rune desktop application with a Python acquisition and rendering pipeline.
+An interactive research visualization for river networks, coastal satellite observations (chl + SST), precipitation point samples, wastewater facilities and desalination plants. It combines a native Rust/Rune desktop application with a Python acquisition and rendering pipeline.
 
-The application is designed for local, user-initiated data acquisition. **Third-party data, derived provider rasters, credentials, and tokens are not included in this repository or in source releases.** Public availability does not by itself grant permission to redistribute every dataset; review each provider’s terms before sharing any local output.
+The application is designed for local, user-initiated data acquisition. **Third-party data, derived provider rasters, credentials, and tokens are not included in this repository or in source releases.** Public availability does not by itself grant permission to redistribute every dataset; review each provider’s terms before sharing any local output.  
+
+This app was built in large part using Large Language Models (LLMs) for research and development purposes.  
+
+## Motivation for the app:
+1. Demonstrate agentic app dev via Rune + Forge3D.
+2. Counter paid data monopolies by enabling local, user-driven research.  
+
+I saw several public facing researchers make infographics/animations for river networks/coastal observations, and mostly my request for sharing the underlying code were ignored. As far as I can see, the underlying data is PUBLIC and FREE, and some of it requires proper attribution and licensing compliance (including not redistributing, especially for commercial purposes).  
+Secondly, without access to the code, reproducibility and verification of the results are impossible, which undermines scientific integrity and transparency. In that public facing (x + linkedin post) animation that led to this, some of the visuals look off, inconsistent, or misleading to me, but without the underlying code and data, I cannot confirm or correct these issues.  
+Manipulation of visualisations is a dangerous practice and having the fallacy of looking polished, authoritative or scientific creates a false sense of credibility. 
+For example, imagine the bounding box in the demo (webm) below did not include the Egypt's nile delta or waste water outflows - the source of algal blooms could not appear as starting from a location that is out of frame.  
+Similarly, imagine including historical (e.g. previous year, or weekly cumulative values) river flow data without clearly indicating the time frame; or even worse - as some who lives next to some of these rivers - the percipitation data does not account for the watershed region and outflow when the waste water plants pipe out directly to the rivers/basins. In fact, many of the large rivers are diverted and any measured flow recorded could very likely not reach the sea at all, baring extreme events like floods.  
+Other potential issues include selective data omission, exaggerated visual effects, or misleading color scales, all of which can distort the interpretation of the underlying scientific phenomena. E.g. the mg/ml3 values can be set to a scale that accounts for `[min,max]` of measured data used rather than currently displayed (bounded) values...  
+
+And the data itself may be inadequate: is cloud coverage accounted for in the satellite observations? is the river chl/flow/layout calibrated and accounted for human interventions such as dams?...  
+
+Note - this isn't an attack on any specific researcher or visualisation, just a personal rant. I'm also not at all an expert in this field but an observer, I really don't assume any misconduct or intentional misrepresentation on anyone's part.
+
 
 ## Features
 
