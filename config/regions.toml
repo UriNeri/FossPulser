@@ -1,0 +1,9 @@
+[eastern_mediterranean]
+name = "Eastern Mediterranean research preset"
+west = 29.0
+south = 29.3
+east = 36.0
+north = 33.4
+start_date = "2022-01-01"
+featured_rivers = ["Yarkon", "Sorek"]
+taxonomy_demo = true

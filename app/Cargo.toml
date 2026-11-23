@@ -1,0 +1,25 @@
+[package]
+name = "fosspulser"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "fosspulser"
+path = "src/main.rs"
+
+[dependencies]
+rune = { git = "https://github.com/anomalyco/rune", branch = "dev", features = ["native-file-dialog"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# rune vendors patched forks of these crates (see its own root Cargo.toml);
+# any app building rune from git needs the same patches, pointed at the same
+# repo/branch, or cargo resolves the vanilla crates.io versions instead and
+# dependency resolution fails (e.g. parley_engine's `line-dictionaries`
+# feature rune expects doesn't exist upstream).
+[patch.crates-io]
+wgpu-hal = { git = "https://github.com/anomalyco/rune", branch = "dev" }
+winit = { git = "https://github.com/anomalyco/rune", branch = "dev" }
+parley_engine = { git = "https://github.com/anomalyco/rune", branch = "dev" }
+accesskit_windows = { git = "https://github.com/anomalyco/rune", branch = "dev" }
+accesskit_macos = { git = "https://github.com/anomalyco/rune", branch = "dev" }

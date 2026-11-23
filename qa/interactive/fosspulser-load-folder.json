@@ -1,0 +1,5 @@
+{"events": [
+  {"t": 0.4, "type": "tap", "key": "fetch-toggle"},
+  {"t": 0.8, "type": "tap", "key": "load-folder"},
+  {"t": 1.2, "type": "file-dialog", "path": "/home/neri/Documents/GitHub/FossPulser_local_data/bundles/eastern-mediterranean-be2880174e40"}
+]}

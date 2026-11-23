@@ -1,0 +1,73 @@
+# Public source metadata only. Never add credentials or tokens to this file.
+
+[gmrt]
+name = "GMRT Global Multi-Resolution Topography"
+url = "https://www.gmrt.org/"
+product_url = "https://www.gmrt.org/"
+license_url = "https://www.gmrt.org/about/"
+auth = "none"
+coverage = "global"
+
+[natural_earth]
+name = "Natural Earth"
+url = "https://www.naturalearthdata.com/"
+license_url = "https://www.naturalearthdata.com/about/terms-of-use/"
+auth = "none"
+coverage = "global"
+
+[hydrorivers]
+name = "HydroRIVERS v1.0"
+url = "https://www.hydrosheds.org/products/hydrorivers"
+license_url = "https://www.hydrosheds.org/page/license"
+auth = "none"
+coverage = "continental archives"
+
+[hydrowaste]
+name = "HydroWASTE v1.0"
+url = "https://doi.org/10.5194/essd-14-559-2022"
+license_url = "https://doi.org/10.5194/essd-14-559-2022"
+auth = "none"
+coverage = "global"
+
+[copernicus_chlorophyll]
+name = "Copernicus Marine Mediterranean daily gap-free chlorophyll"
+url = "https://marine.copernicus.eu/"
+product_url = "https://data.marine.copernicus.eu/product/OCEANCOLOUR_MED_BGC_L4_MY_009_142"
+license_url = "https://marine.copernicus.eu/user-corner/service-commitments-and-licence"
+auth = "copernicus"
+coverage = "Mediterranean"
+reprocessed_dataset = "cmems_obs-oc_med_bgc-plankton_my_l4-gapfree-multi-1km_P1D"
+nrt_dataset = "cmems_obs-oc_med_bgc-plankton_nrt_l4-gapfree-multi-1km_P1D"
+
+[copernicus_sst]
+name = "Copernicus Marine Mediterranean sea-surface temperature"
+url = "https://marine.copernicus.eu/"
+product_url = "https://data.marine.copernicus.eu/product/SST_MED_SST_L4_REP_OBSERVATIONS_010_021"
+license_url = "https://marine.copernicus.eu/user-corner/service-commitments-and-licence"
+auth = "copernicus"
+coverage = "Mediterranean"
+reprocessed_dataset = "cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021"
+nrt_dataset = "SST_MED_SST_L4_NRT_OBSERVATIONS_010_004_a_V2"
+
+[noaa_chlorophyll]
+name = "NOAA CoastWatch S-NPP VIIRS daily chlorophyll"
+url = "https://coastwatch.noaa.gov/erddap/griddap/noaacwNPPVIIRSSQchlaDaily.html"
+license_url = "https://coastwatch.noaa.gov/cw/satellite-data-products.html"
+auth = "none"
+coverage = "global"
+dataset = "noaacwNPPVIIRSSQchlaDaily"
+
+[noaa_sst]
+name = "NOAA CoastWatch GHRSST daily sea-surface temperature"
+url = "https://coastwatch.noaa.gov/erddap/griddap/noaacwBLENDEDsstDaily.html"
+license_url = "https://coastwatch.noaa.gov/cw/satellite-data-products.html"
+auth = "none"
+coverage = "global"
+dataset = "noaacwBLENDEDsstDaily"
+
+[open_meteo]
+name = "Open-Meteo Historical Weather API / ERA5"
+url = "https://open-meteo.com/en/docs/historical-weather-api"
+license_url = "https://open-meteo.com/en/terms"
+auth = "none"
+coverage = "global point queries"

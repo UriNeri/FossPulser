@@ -1,0 +1,59 @@
+# Local third-party data and generated bundles. Fetch data locally; never commit it.
+data/
+*.nc
+*.nc4
+*.tif
+*.tiff
+*.zip
+*.shp
+*.shx
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.gpkg
+
+# Credentials and local configuration. .env.example is intentionally allowed.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*.netrc
+_netrc
+.copernicusmarine-credentials
+
+# Pixi and Python environments
+.pixi/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Rust build artifacts
+app/target/
+target/
+app/**/*.rs.bk
+
+# Generated QA captures; keep the small reproducible input scripts.
+qa/interactive/frames-*/
+
+# Logs, temporary files, and local tooling
+*.log
+*.tmp
+*.part
+*.bak
+.DS_Store
+Thumbs.db
+form_tmp/
+from_tmp2/
+
+# Editor-local state
+.vscode/*
+!.vscode/settings.json

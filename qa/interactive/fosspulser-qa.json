@@ -1,0 +1,25 @@
+{
+  "events": [
+    {"t": 0.3, "type": "tap", "key": "world-view"},
+    {"t": 1.2, "type": "tap", "key": "home-view"},
+    {"t": 2.1, "type": "tap", "key": "viewport", "x": 400, "y": 300},
+    {"t": 2.6, "type": "drag", "key": "viewport", "dx": 180, "dy": -90, "dur": 0.5},
+    {"t": 3.6, "type": "tap", "key": "reset-view"},
+    {"t": 4.4, "type": "tap", "key": "fetch-toggle"},
+    {"t": 5.0, "type": "tap", "key": "fetch-west"},
+    {"t": 5.2, "type": "type", "text": "-128.0"},
+    {"t": 5.9, "type": "tap", "key": "fetch-south"},
+    {"t": 6.1, "type": "type", "text": "28.0"},
+    {"t": 6.8, "type": "tap", "key": "fetch-east"},
+    {"t": 7.0, "type": "type", "text": "-118.0"},
+    {"t": 7.7, "type": "tap", "key": "fetch-north"},
+    {"t": 7.9, "type": "type", "text": "36.0"},
+    {"t": 8.6, "type": "tap", "key": "fetch-visible"},
+    {"t": 9.6, "type": "tap", "key": "cancel-fetch"},
+    {"t": 10.4, "type": "tap", "key": "close-fetch"},
+    {"t": 11.2, "type": "tap", "key": "rivers-toggle"},
+    {"t": 11.8, "type": "tap", "key": "rivers-toggle"},
+    {"t": 12.4, "type": "tap", "key": "help-toggle"},
+    {"t": 13.2, "type": "tap", "key": "help-toggle"}
+  ]
+}
