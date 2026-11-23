@@ -21,6 +21,10 @@ And the data itself may be inadequate: is cloud coverage accounted for in the sa
 
 Note - this isn't an attack on any specific researcher or visualisation, just a personal rant. I'm also not at all an expert in this field but an observer, I really don't assume any misconduct or intentional misrepresentation on anyone's part.
 
+## demo
+
+![FossPulser Demo](demo.webm)
+
 
 ## Features
 
