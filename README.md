@@ -23,7 +23,7 @@ Note - this isn't an attack on any specific researcher or visualisation, just a 
 
 ## demo
 
-![FossPulser Demo](demo.webm)
+![FossPulser Demo](demo.gif)
 
 
 ## Features
